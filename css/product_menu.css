@@ -73,11 +73,16 @@ nav img {
 	border-radius: 10px;
 }
 
+.price {
+	color: #6f4e37;
+	font-weight: bold;
+}
+
 /* Make the specials card span 2 rows in the first column */
 .menu-grid > .specials {
 	grid-column: 1/2;
 	grid-row: span 2;
-	background-color: #DEB887;
+	background-color: #deb887;
 	border-radius: 10px;
 }
 
