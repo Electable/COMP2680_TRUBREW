@@ -90,22 +90,30 @@ section{
     grid-column: 1;
     grid-column-end: 3;
     place-items: center;
-}
-
-section h1{
-    text-align: center;
-    text-decoration: underline;
-    font-size: 150%;
+    background-color: #ffd79b;
 }
 
 .infoBox{
+    background-color: #FFBD59;
     border:  5px solid black;
     border-radius: 15px;
-    height: 350px;
-    width: 700px;
+    height: auto;
+    width: 45VW;
     padding: 5px;
-    margin-top: -55px;
+    margin-top: 0px;
 }
+
+.infoBox h1{
+    text-align: center;
+    text-decoration: underline;
+    margin: 0;
+}
+
+#dealsBox{
+    display: grid;
+    place-items: center;
+}
+
 
 #dealsSect{
     grid-column: 1;
@@ -113,6 +121,7 @@ section h1{
 }
 
 #dealSect tr,td,th{
+    background-color: #ffd79b;
     border: 5px solid black;
     padding: 10px;
     font-weight: bold;
@@ -127,8 +136,9 @@ section h1{
 }
 
 .productBox{
+    width: 90%;
+    margin-top: 5px;
     text-align: center;
-    margin: 25px;
 }
 
 #eventsSect{
@@ -137,9 +147,9 @@ section h1{
 }
 
 .eventBox{
+    background-color: #ffd79b;
     border: 3px solid black;
     border-radius: 10px;
-    margin-top: 25px;
     font-style: italic;
 }
 
@@ -182,4 +192,275 @@ footer a:link, a:visited{
     margin-left: 1em;
 }
 
+@media all and (max-width: 500px){
+    html, body{
+       max-width: 100%;
+       overflow-x: hidden;
+    }
+    
+    body{
+    align-self: center;
+    background-color: #FFBD59;
+    display: grid;
+    grid-template-rows: 250px 350px auto auto 75px; 
+    grid-template-columns: 1fr;
+}
 
+    header{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    header div{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    }
+
+    header img{
+        vertical-align: middle;
+        margin-right: auto;
+        margin-left: auto;
+        width: 5em;
+        height: 5em;
+    }
+
+    header h1{
+        display: block;
+        font-size: 2rem;
+
+    }
+
+    header h2{
+        display: block;
+        font-style: italic;
+    }
+
+    nav{
+        display: grid;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        text-align: center;
+        background-color: black;
+    }
+
+    nav div{
+        margin: auto;
+        margin-top: 40px;
+    }
+
+
+    nav a{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+
+    nav a img{
+        float: none;
+        margin-top: -10px;
+        width: 2em;
+        height: 2em;
+    }
+
+    section{
+        padding: 5px;
+    }
+
+    .infoBox{
+    background-color: #FFBD59;
+    border:  5px solid black;
+    border-radius: 15px;
+    height: auto;
+    width:90%;
+    padding: 5px;
+    margin-top: 10px;
+}
+    #dealSect tr,td,th{
+        background-color: #ffd79b;
+        border: 5px solid black;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+
+    #dealSect a, table{
+        display: inline;
+        border-collapse: collapse;
+    }
+
+    #dealsSect{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+    #eventsSect{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    }
+
+    .eventBox{
+    margin-top: 10px;
+}
+
+    footer{
+        display: grid;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column: 1;
+        grid-column-end: 3;
+        place-items: center;
+
+
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: 1em;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 1200px) {
+    html, body{
+       max-width: 100%;
+       overflow-x: hidden;
+    }
+    
+    body{
+    align-self: center;
+    background-color: #FFBD59;
+    display: grid;
+    grid-template-rows: 250px 125px auto auto 75px; 
+    grid-template-columns: 1fr;
+}
+
+    header{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    header div{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    }
+
+    header img{
+        vertical-align: middle;
+        margin-right: auto;
+        margin-left: auto;
+        width: 5em;
+        height: 5em;
+    }
+
+    header h1{
+        display: block;
+        font-size: 2rem;
+
+    }
+
+    header h2{
+        display: block;
+        font-style: italic;
+    }
+
+    nav{
+        display: grid;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        text-align: center;
+        background-color: black;
+    }
+
+    nav div{
+        margin: auto;
+        margin-top: 40px;
+    }
+
+
+    nav a{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+
+    nav a img{
+        float: right;
+        margin-top: -55px;
+        width: 2em;
+        height: 2em;
+    }
+
+    section{
+        padding: 5px;
+    }
+
+    .infoBox{
+    background-color: #FFBD59;
+    border:  5px solid black;
+    border-radius: 15px;
+    height: auto;
+    width:auto;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+    #dealsSect{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+ #dealSect tr,td,th{
+        background-color: #ffd79b;
+        border: 5px solid black;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+
+    #dealSect a, table{
+        display: inline;
+        border-collapse: collapse;
+    }
+
+    #eventsSect{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    }
+
+    .eventBox{
+    background-color: #ffd79b;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+    .eventBox li{
+        margin: 2px;
+    }
+
+    footer{
+        display: grid;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column: 1;
+        grid-column-end: 3;
+        place-items: center;
+}
+}
