@@ -328,7 +328,7 @@ footer a:link, a:visited{
     }
 }
 
-@media all and (min-width: 500px) and (max-width: 1200px) {
+@media all and (min-width: 500px) and (max-width: 1100px) {
     html, body{
        max-width: 100%;
        overflow-x: hidden;
