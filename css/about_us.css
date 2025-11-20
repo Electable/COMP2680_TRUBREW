@@ -188,6 +188,7 @@ section > div > h1{
     background-color: lightgray;
     height: 315px;
     width: 500px;
+    place-items: center;
 }
 
 #feedback textarea{
