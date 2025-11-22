@@ -1,0 +1,245 @@
+body {
+	background-color: #FFBD59;
+    border: 1rem solid black;
+}
+
+header{
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    place-items: center;
+
+    background-color: #FFBD59;
+    padding: 1.2em;
+}
+
+header div{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header img{
+    vertical-align: middle;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 5em;
+    height: 5em;
+}
+
+header h1{
+    display: inline;
+    font-size: 2rem;
+
+}
+
+header h2{
+    display: inline;
+    font-style: italic;
+}
+/*Navigation bar style*/
+nav {
+	display: grid;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column: 1;
+	grid-column-end: 3;
+
+	text-align: center;
+	background-color: black;
+}
+
+nav div {
+	margin: auto;
+	margin-top: 40px;
+}
+
+nav a {
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size: 30px;
+}
+
+nav a:link {
+	color: white;
+	font-weight: bold;
+}
+
+nav a:visited {
+	color: grey;
+	font-weight: bold;
+}
+
+nav img {
+	float: right;
+	width: 2em;
+	height: 2em;
+	margin-top: -65px;
+}
+
+/*div for the section menu*/
+.wrapper {
+	padding: 40px;
+	background-color: blanchedalmond;
+	text-align: center;
+}
+
+/*div for menu*/
+.menu-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive 3 per row*/
+	gap: 25px;
+	margin-top: 30px;
+}
+
+/*Product section box style */
+.product {
+	background-color: #ffd79b;
+	border: 2px solid black;
+	border-radius: 20px;
+	text-align: center;
+	box-shadow: 0 4px 10px rgba(255, 189, 89, 0.4);
+	padding: 1rem;
+	color: black;
+	height: auto;
+}
+
+/*images inside the boxes*/
+.product img {
+	width: 100%;
+	height: 450px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.product p {
+	font-style: italic;
+}
+
+.price {
+	color: #6f4e37;
+	font-weight: bold;
+}
+
+/* Make the specials card span 2 rows in the first column */
+.menu-grid > .specials {
+	grid-column: 1/2;
+	grid-row: span 2;
+	background-color: #deb887;
+	border-radius: 10px;
+}
+
+/*links styles*/
+
+a {
+	text-decoration: none;
+	color: #6f4e37;
+	font-weight: bold;
+}
+
+/*Footer Style*/
+footer {
+	display: grid;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column: 1;
+	grid-column-end: 3;
+	place-items: center;
+
+	background-color: black;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	font-size: 0.5em;
+}
+
+footer a:link,
+a:visited {
+	text-decoration: none;
+	margin-left: 1em;
+	margin-left: 1em;
+}
+
+@media all and (min-width: 500px) and (max-width: 1100px) {
+    html, body{
+       max-width: 100%;
+       overflow-x: hidden;
+    }
+    
+    body{
+    align-self: center;
+    background-color: #FFBD59;
+    display: grid;
+    grid-template-rows: 250px 125px auto auto auto auto 75px; 
+    grid-template-columns: 1fr;
+}
+
+    header{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    header div{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    }
+
+    header img{
+        vertical-align: middle;
+        margin-right: auto;
+        margin-left: auto;
+        width: 5em;
+        height: 5em;
+    }
+
+    header h1{
+        display: block;
+        font-size: 2rem;
+
+    }
+
+    header h2{
+        display: block;
+        font-style: italic;
+    }
+
+    nav{
+        display: grid;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        text-align: center;
+        background-color: black;
+    }
+
+    nav div{
+        margin: auto;
+        margin-top: 40px;
+    }
+
+
+    nav a{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+
+    nav a img{
+        float: right;
+        margin-top: -55px;
+        width: 2em;
+        height: 2em;
+    }
+
+    footer{
+        display: grid;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        grid-column: 1;
+        grid-column-end: 3;
+        place-items: center;
+}
+}
