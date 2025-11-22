@@ -1,0 +1,176 @@
+body {
+}
+
+header {
+	display: grid;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	place-items: center;
+
+	background-color: #ffbd59;
+	padding: 1.2em;
+}
+
+header div {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+header img {
+	vertical-align: middle;
+	margin-right: 15px;
+	margin-left: 15px;
+	width: 5em;
+	height: 5em;
+}
+
+header h1 {
+	display: inline;
+	font-size: 2rem;
+}
+
+header h2 {
+	display: inline;
+	font-style: italic;
+}
+
+nav {
+	display: grid;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column: 1;
+	grid-column-end: 3;
+
+	text-align: center;
+	background-color: black;
+}
+
+nav div {
+	margin: auto;
+	margin-top: 40px;
+}
+
+nav a {
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size: 30px;
+}
+
+nav a:link {
+	color: white;
+	font-weight: bold;
+}
+
+nav a:visited {
+	color: grey;
+	font-weight: bold;
+}
+
+nav img {
+	float: right;
+	width: 2em;
+	height: 2em;
+	margin-top: -65px;
+}
+
+/*div for the section menu*/
+.wrapper {
+	padding: 40px;
+	background-color: #fffaf3;
+  color: #3e3e3e;
+	text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*div for menu*/
+.menu-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive 3 per row*/
+	gap: 25px;
+	margin-top: 30px;
+}
+
+/*Product section box style */
+.product {
+	background-color: #ffe8cc;
+	border: 2px solid whitesmoke;
+	border-radius: 20px;
+	text-align: center;
+	box-shadow: 0 4px 10px rgba(255, 189, 89, 0.4);
+	padding: 1rem;
+	color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*images inside the boxes*/
+.product img {
+	width: 100%;
+  max-width: 250px;
+	height: 180px;
+	object-fit: cover;
+  object-position: center;
+	border-radius: 10px;
+  background-color: #ffe8cc;
+}
+
+.price {
+	color: #6f4e37;
+	font-weight: bold;
+  background-color: #fffaf3;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+/* Make the specials card span 2 rows in the first column */
+.menu-grid > .specials {
+	grid-column: 1/2;
+	grid-row: span 2;
+	background-color: #ffe8d6;/* #FBEDCD; /* #deb887;*/
+	border-radius: 10px;
+}
+
+/*links styles*/
+
+a[href*="buy-now"] {
+	text-decoration: none;
+	color: #3b2f2f;
+	background-color: #c9f4c7;
+	border-radius: 8px;
+	padding: 10px 20px;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+a[href*="buy-now"]:hover {
+	background-color: #a7e0a2;
+}
+
+/*Footer Style*/
+footer {
+	display: grid;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column: 1;
+	grid-column-end: 3;
+	place-items: center;
+
+	background-color: black;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	font-size: 0.5em;
+}
+
+footer a:link,
+a:visited {
+	text-decoration: none;
+	margin-left: 1em;
+	margin-left: 1em;
+}

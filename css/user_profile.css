@@ -1,0 +1,146 @@
+body {
+	background-color: #FFBD59;
+    border: 1rem solid black;
+}
+
+header{
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    place-items: center;
+
+    background-color: #FFBD59;
+    padding: 1.2em;
+}
+
+header div{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header img{
+    vertical-align: middle;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 5em;
+    height: 5em;
+}
+
+header h1{
+    display: inline;
+    font-size: 2rem;
+
+}
+
+header h2{
+    display: inline;
+    font-style: italic;
+}
+/*Navigation bar style*/
+nav {
+	display: grid;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column: 1;
+	grid-column-end: 3;
+
+	text-align: center;
+	background-color: black;
+}
+
+nav div {
+	margin: auto;
+	margin-top: 40px;
+}
+
+nav a {
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size: 30px;
+}
+
+nav a:link {
+	color: white;
+	font-weight: bold;
+}
+
+nav a:visited {
+	color: grey;
+	font-weight: bold;
+}
+
+nav img {
+	float: right;
+	width: 2em;
+	height: 2em;
+	margin-top: -65px;
+}
+
+section{
+    padding: 30px;
+    background-color: #FFd79b;
+	text-align: center;
+}
+
+.profile {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.info {
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #FFBD59;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    display: grid;
+    align-content: end;
+    text-align: left;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+.payment {
+    border: 2px solid black;
+    padding: 15px;
+    background-color: #FFBD59;
+    width: 60%;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+
+
+/*Footer Style*/
+footer {
+	display: grid;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column: 1;
+	grid-column-end: 3;
+	place-items: center;
+
+	background-color: black;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	font-size: 0.5em;
+}
+
+footer a:link,
+a:visited {
+	text-decoration: none;
+	margin-left: 1em;
+	margin-left: 1em;
+}   
