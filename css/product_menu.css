@@ -87,8 +87,9 @@ nav img {
 .menu-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive 3 per row*/
-	gap: 25px;
+	grid-template-rows: auto auto auto; /* 3 rows, adjust number if needed */
 	margin-top: 30px;
+	gap: 25px;
 }
 
 /*Product section box style */
@@ -112,17 +113,69 @@ nav img {
 	border-radius: 10px;
 }
 
+.special img {
+	max-width: 100%;
+	max-height: auto;
+	object-fit: contain; /* show full image */
+	border-radius: 10px;
+	display: block; /* remove inline gap*/
+}
+
+.carousel {
+	flex: 1 1 auto;
+	overflow: hidden;
+	border-radius: 12px;
+	position: relative;
+	width: 100%;
+	height: 100%; /* fix height to show exactly one item */
+}
+
+.carousel-list {
+	height: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	transition: transform 0.5s ease;
+}
+
+.carousel-list li {
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: blanchedalmond;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.carousel-list li img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	user-select: none;
+	pointer-events: none;
+	object-fit: cover; /* crops excess to fill container nicely */
+	display: block;
+}
+
 .price {
 	color: #6f4e37;
 	font-weight: bold;
 }
 
-/* Make the specials card span 2 rows in the first column */
+/* Make the specials card span 3 rows in the first column */
 .menu-grid > .specials {
-	grid-column: 1/2;
-	grid-row: span 3;
+	grid-column: -2 / -1; /* last column */
+	grid-row: 1 / span 2;
 	background-color: #deb887;
 	border-radius: 10px;
+
+	display: flex; /* make it a flex container */
+	flex-direction: column; /* vertical layout */
+	padding: 10px;
+	overflow: hidden;
+	height: auto;
 }
 
 /*links styles*/
