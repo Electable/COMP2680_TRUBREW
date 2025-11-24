@@ -8,7 +8,7 @@ form.addEventListener('submit', function(transfer){
     const emailValue = email.value;
     const passValue = password.value;
 
-    localStorage.setItem('user', JSON.stringify({e: emailValue, p: passValue}))
-    window.location.href = "user_profile.html";
+    localStorage.setItem('user', JSON.stringify({e: emailValue, p: passValue}));
 
+    window.location.href = "user_profile.html";
 })

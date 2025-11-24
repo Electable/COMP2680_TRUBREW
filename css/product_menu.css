@@ -77,7 +77,6 @@ nav img {
 
 /*div for the section menu*/
 .wrapper {
-	grid-column: 1 / 3;
 	padding: 40px;
 	background-color: blanchedalmond;
 	text-align: center;

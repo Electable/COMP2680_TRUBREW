@@ -83,7 +83,6 @@ nav img {
 
 /*div for menu*/
 .menu-grid {
-	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive 3 per row*/
 	gap: 25px;
@@ -99,38 +98,38 @@ nav img {
 	box-shadow: 0 4px 10px rgba(255, 189, 89, 0.4);
 	padding: 1rem;
 	color: black;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*images inside the boxes*/
 .product img {
 	width: 100%;
-	max-width: 250px;
-	max-height: 180px;
+  max-width: 250px;
+	height: 180px;
 	object-fit: cover;
-	object-position: center;
+  object-position: center;
 	border-radius: 10px;
-	background-color: #ffe8cc;
+  background-color: #ffe8cc;
 }
 
 .price {
 	color: #6f4e37;
 	font-weight: bold;
-	background-color: #fffaf3;
-	padding: 10px;
-	border-radius: 8px;
-	display: inline-block;
-	margin-top: 8px;
+  background-color: #fffaf3;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 8px;
 }
 
 /* Make the specials card span 2 rows in the first column */
 .menu-grid > .specials {
 	grid-column: 1/2;
 	grid-row: span 2;
-	background-color: #ffe8d6; /* #FBEDCD; /* #deb887;*/
+	background-color: #ffe8d6;/* #FBEDCD; /* #deb887;*/
 	border-radius: 10px;
 }
 
