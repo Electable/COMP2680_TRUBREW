@@ -1,11 +1,11 @@
 body {
-	background-color: blanchedalmond;
+	background-color: rgba(255, 235, 205, 1);
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	background-color: #FFBD59;
-  border: 1rem solid black;
+	background-color: rgba(255, 189, 89, 1);
+  	border: 1rem solid hsla(0, 0%, 0%, 1);
 }
 
 header {
@@ -16,7 +16,7 @@ header {
 	grid-column-end: 3;
 	place-items: center;
 
-	background-color: #ffbd59;
+	background-color: rgba(255, 189, 89, 1);
 	padding: 1.2em;
 }
 
@@ -49,14 +49,15 @@ nav {
 	grid-row-end: 3;
 	grid-column: 1;
 	grid-column-end: 3;
+	height: 100px;
 
 	text-align: center;
-	background-color: black;
+	background-color: hsla(0, 0%, 0%, 1);
 }
 
 nav div {
 	margin: auto;
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 nav a {
@@ -65,14 +66,14 @@ nav a {
 	font-size: 30px;
 }
 
-nav a:link {
-	color: white;
-	font-weight: bold;
+nav a:link{
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: bold;
 }
 
-nav a:visited {
-	color: grey;
-	font-weight: bold;
+nav a:visited{
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: bold;
 }
 
 nav img {
@@ -110,7 +111,7 @@ section {
 
 .add-btn {
 	text-decoration: none;
-	color: white;
+	color: hsla(0, 0%, 100%, 1);
 	background-color: #7a4a00;
 	border-radius: 8px;
 
@@ -130,8 +131,8 @@ footer {
 	grid-column-end: 3;
 	place-items: center;
 
-	background-color: black;
-	color: white;
+	background-color: hsla(0, 0%, 0%, 1);
+	color: hsla(0, 0%, 100%, 1);
 	padding: 10px;
 	text-align: center;
 	font-size: 0.5em;
@@ -177,16 +178,36 @@ a:visited {
 		display: block;
 	}
 
-	nav a {
-		display: block;
-		margin: 15px 0;
-		font-size: 1.2rem;
-	}
+	nav{
+        display: grid;
+        grid-row-start: 2;
+        grid-row-end: 3;
+		height: 350px;
 
-	nav a img {
-		float: none;
-		margin: 10px auto;
-	}
+        text-align: center;
+        background-color: hsla(0, 0%, 0%, 1);
+    }
+
+    nav div{
+        margin: auto;
+        margin-top: 40px;
+    }
+
+
+    nav a{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+
+    nav a img{
+        float: none;
+        margin-top: -10px;
+        width: 2em;
+        height: 2em;
+    }
 
 	section {
 		display: flex;

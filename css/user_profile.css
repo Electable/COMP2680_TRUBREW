@@ -1,6 +1,8 @@
 body {
-	background-color: #FFBD59;
-    border: 1rem solid black;
+	background-color: rgba(255, 189, 89, 1);
+    border: 1rem solid hsla(0, 0%, 0%, 1);
+    grid-template-rows: 20VH 15VH 60VH 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 header{
@@ -11,7 +13,7 @@ header{
     grid-column-end: 3;
     place-items: center;
 
-    background-color: #FFBD59;
+    background-color: rgba(255, 189, 89, 1);
     padding: 1.2em;
 }
 
@@ -45,14 +47,15 @@ nav {
 	grid-row-end: 3;
 	grid-column: 1;
 	grid-column-end: 3;
+    height: 100px;
 
 	text-align: center;
-	background-color: black;
+	background-color: hsla(0, 0%, 0%, 1);
 }
 
 nav div {
 	margin: auto;
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 nav a {
@@ -61,14 +64,14 @@ nav a {
 	font-size: 30px;
 }
 
-nav a:link {
-	color: white;
-	font-weight: bold;
+nav a:link{
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: bold;
 }
 
-nav a:visited {
-	color: grey;
-	font-weight: bold;
+nav a:visited{
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: bold;
 }
 
 nav img {
@@ -80,7 +83,7 @@ nav img {
 
 section{
     padding: 30px;
-    background-color: #FFd79b;
+    background-color: rgba(255, 215, 155, 1);
 	text-align: center;
 }
 
@@ -94,25 +97,25 @@ section{
 }
 
 .info {
-    border: 2px solid black;
+    border: 2px solid hsla(0, 0%, 0%, 1);
     padding: 20px;
-    background-color: #FFBD59;
+    background-color: rgba(255, 189, 89, 1);
     margin-left: auto;
     margin-right: auto;
     width: 60%;
     display: grid;
     align-content: end;
     text-align: left;
-    border: 5px solid black;
+    border: 5px solid hsla(0, 0%, 0%, 1);
     border-radius: 15px;
 }
 
 .payment {
-    border: 2px solid black;
+    border: 2px solid hsla(0, 0%, 0%, 1);
     padding: 15px;
-    background-color: #FFBD59;
+    background-color: rgba(255, 189, 89, 1);
     width: 60%;
-    border: 5px solid black;
+    border: 5px solid hsla(0, 0%, 0%, 1);
     border-radius: 15px;
 }
 
@@ -131,11 +134,11 @@ footer {
 	grid-column-end: 3;
 	place-items: center;
 
-	background-color: black;
-	color: white;
+	background-color: hsla(0, 0%, 0%, 1);
+	color: hsla(0, 0%, 100%, 1);
 	padding: 10px;
 	text-align: center;
-	font-size: 0.5em;
+	font-size: 1em;
 }
 
 footer a:link,
