@@ -266,6 +266,14 @@ a:visited {
     }
 }
 
+input:focus:valid{
+    background-color: lightgreen;
+}
+
+input:focus:invalid{
+    background-color: lightcoral;
+}
+
 @media all and (min-width: 500px) and (max-width: 1100px) {
     html, body{
        max-width: 100%;

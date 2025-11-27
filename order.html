@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Order Page</title>
+    <title>TRUBREW - Online Order Cart</title>
     <link rel="stylesheet" href="css/order.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -42,10 +42,11 @@
 				<div class="payment">
                     <h2>Payment Information</h2>
 					<form>
-                        <input type="text" id="name" name="name" size="26" placeholder="Name for Order"><br><br>
-                        <input type="text" id="cardNumber" name="cardNumber" size="26" placeholder="Card Number" required><br><br>
-                        <input type="text" id="expiryDate" name="expiryDate" size="10" placeholder="Expiry Date" required>
-                        <input type="text" id="cvv" name="cvv" size="10" placeholder="CVV" required><br><br>
+                        <input type="text" id="name" name="name" size="26" placeholder="Name for Order" required minlength="1"><br><br>
+                        <input type="text" id="cardNumber" name="cardNumber" size="26" placeholder="Card Number" minlength="16" maxlength="16" required><br><br>
+                        <input type="text" id="expiryDate" name="expiryDate" size="10" placeholder="Expiry Date" maxlength="4" required>
+                        <input type="text" id="cvv" name="cvv" size="10" placeholder="CVV" maxlength="3" required><br><br>
+						<input type="checkbox"> Pay at Location?    
                         <input type="submit" id="order" value="Place Order">
                     </form>
 				</div>

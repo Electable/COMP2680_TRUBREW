@@ -78,6 +78,14 @@ footer{
     text-align: center;
 }
 
+input:focus:valid{
+    background-color: lightgreen;
+}
+
+input:focus:invalid{
+    background-color: lightcoral;
+}
+
 @media all and (max-width: 500px){
     body h1{
         font-size: 10VW;
