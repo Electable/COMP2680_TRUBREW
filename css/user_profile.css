@@ -110,6 +110,10 @@ section{
     border-radius: 15px;
 }
 
+.info input{
+    margin-top: 5px;
+}
+
 .payment {
     border: 2px solid hsla(0, 0%, 0%, 1);
     padding: 15px;
@@ -146,4 +150,248 @@ a:visited {
 	text-decoration: none;
 	margin-left: 1em;
 	margin-left: 1em;
-}   
+}  
+
+/* Mobile version */
+
+@media (max-width: 500px) {
+    html, body{
+       max-width: 100%;
+       overflow-x: hidden;
+    }
+    
+    body{
+    align-self: center;
+    background-color: rgba(255, 189, 89, 1);
+    display: grid;
+    grid-template-rows: 250px 350px auto 75px; 
+    grid-template-columns: 1fr;
+}
+
+    header{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    header div{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    }
+
+    header img{
+        vertical-align: middle;
+        margin-right: auto;
+        margin-left: auto;
+        width: 5em;
+        height: 5em;
+    }
+
+    header h1{
+        display: block;
+        font-size: 2rem;
+
+    }
+
+    header h2{
+        display: block;
+        font-style: italic;
+    }
+
+    nav{
+        display: grid;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        height: 350px;
+
+        text-align: center;
+        background-color: hsla(0, 0%, 0%, 1);
+    }
+
+    nav div{
+        margin: auto;
+        margin-top: 40px;
+    }
+
+
+    nav a{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+
+    nav a img{
+        float: none;
+        margin-top: -10px;
+        width: 2em;
+        height: 2em;
+    }
+
+    section{
+        padding: 5px;
+        height: auto;
+        background-color: rgba(255, 215, 155, 1);
+        min-height: 500px;
+    }
+
+    .info{
+        margin-top: 35px;
+        display: block;
+        place-items: center;
+        width: 200px;
+        text-align: center;
+    }
+
+    .info input{
+        margin-top: 5px;
+    }
+
+    .payment{
+        display: block;
+        margin-top: 50px;
+        place-items: center;
+        width: 210px;
+    }
+
+    footer{
+        display: grid;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column: 1;
+        grid-column-end: 3;
+        place-items: center;
+
+
+        background-color: hsla(0, 0%, 0%, 1);
+        color: hsla(0, 0%, 100%, 1);
+        padding: 10px;
+        text-align: center;
+        font-size: .7em;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 1100px) {
+    html, body{
+       max-width: 100%;
+       overflow-x: hidden;
+    }
+    
+    body{
+    align-self: center;
+    background-color: rgba(255, 189, 89, 1);
+    display: grid;
+    grid-template-rows: 250px 125px auto auto 75px; 
+    grid-template-columns: 1fr;
+}
+
+    header{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    header div{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    }
+
+    header img{
+        vertical-align: middle;
+        margin-right: auto;
+        margin-left: auto;
+        width: 5em;
+        height: 5em;
+    }
+
+    header h1{
+        display: block;
+        font-size: 2rem;
+
+    }
+
+    header h2{
+        display: block;
+        font-style: italic;
+    }
+
+    nav{
+        display: grid;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        height: 125px;
+
+        text-align: center;
+        background-color: hsla(0, 0%, 0%, 1);
+    }
+
+    nav div{
+        margin: auto;
+        margin-top: 40px;
+    }
+
+
+    nav a{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+
+    nav a img{
+        float: right;
+        margin-top: -55px;
+        width: 2em;
+        height: 2em;
+    }
+
+    section{
+        padding: 5px;
+        height: auto;
+        background-color: rgba(255, 215, 155, 1);
+        min-height: 670px;
+    }
+
+    .info{
+        display: grid;
+        font-size: 125%;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column: 1;
+        grid-column-end: 3;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .info input{
+        font-size: 120%;
+        margin-top: 10px;
+    }
+
+    .payment{
+        display: grid;
+        margin: auto;
+        margin-top: 50px;
+        font-size: 125%;
+        width: 60VW;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column: 1;
+        grid-column-end: 3;
+    }
+
+    .payment input,button{
+        font-size: 120%;
+        margin-top: 10px;
+    }
+
+    footer{
+        display: grid;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column: 1;
+        grid-column-end: 3;
+        place-items: center;
+}
+}

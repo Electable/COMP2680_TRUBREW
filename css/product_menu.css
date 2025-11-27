@@ -260,7 +260,7 @@ a:visited {
 
     }
 
-    header h2{
+    header h2{	
         display: block;
         font-style: italic;
     }
@@ -385,6 +385,19 @@ a:visited {
         padding: 5px;
     }
 
+	.menu-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.menu-grid > .specials {
+		grid-column: auto;
+		grid-row: auto;
+	}
+
+	.product{
+		font-size: 150%;
+	}
+
     .infoBox{
     background-color: rgba(255, 189, 89, 1);
     border:  5px solid hsla(0, 0%, 0%, 1);
@@ -398,45 +411,6 @@ a:visited {
 caption{
     font-size: 18.5px;
 }
-    #dealsSect{
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
- #dealSect tr,td,th{
-        background-color: rgba(255, 215, 155, 1);
-        border: 5px solid hsla(0, 0%, 0%, 1);
-        padding: 5px;
-        font-weight: bold;
-        font-size: 25px;
-    }
-
-
-    #dealSect a, table{
-        display: inline;
-        border-collapse: collapse;
-    }
-
-    #eventsSect{
-    grid-row-start: 4;
-    grid-row-end: 5;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    }
-
-    .eventBox{
-    background-color: rgba(255, 215, 155, 1);
-    border: 3px solid hsla(0, 0%, 0%, 1);
-    border-radius: 10px;
-    font-style: italic;
-    font-size: 20px;
-}
-
-    .eventBox li{
-        margin: 2px;
-    }
 
     footer{
         display: grid;

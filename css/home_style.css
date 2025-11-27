@@ -207,7 +207,7 @@ footer a:link, a:visited{
     align-self: center;
     background-color: rgba(255, 189, 89, 1);
     display: grid;
-    grid-template-rows: 250px 350px auto auto 75px; 
+    grid-template-rows: 250px 350px auto 75px; 
     grid-template-columns: 1fr;
 }
 
@@ -318,8 +318,8 @@ footer a:link, a:visited{
 
     footer{
         display: grid;
-        grid-row-start: 5;
-        grid-row-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 5;
         grid-column: 1;
         grid-column-end: 3;
         place-items: center;

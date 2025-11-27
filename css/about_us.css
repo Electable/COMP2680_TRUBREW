@@ -263,12 +263,12 @@ footer a:link, a:visited{
     }
     
     body{
-    align-self: center;
-    background-color: rgba(255, 189, 89, 1);
-    display: grid;
-    grid-template-rows: 250px 350px auto auto auto auto 75px; 
-    grid-template-columns: 1fr;
-}
+        align-self: center;
+        background-color: rgba(255, 189, 89, 1);
+        display: grid;
+        grid-template-rows: 250px 350px auto auto auto auto 75px; 
+        grid-template-columns: 1fr;
+    }
 
     header{
         grid-row-start: 1;
@@ -448,6 +448,10 @@ footer a:link, a:visited{
         padding: 10px;
         text-align: center;
         font-size: 1em;
+    }
+
+    #lastMod{
+        overflow-x: hidden;
     }
 }
 
