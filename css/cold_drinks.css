@@ -4,8 +4,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	background-color: #FFBD59;
-  border: 1rem solid black;
+	background-color: #ffbd59;
+	border: 1rem solid black;
 }
 
 header {
@@ -104,22 +104,56 @@ section {
 	height: 250px;
 	object-fit: cover;
 	border-radius: 10px;
+	transition: transform 0.3s ease;
+}
+
+.menu-category:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+ul li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+ul {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: #ffff;
+	font-size: 16px;
+}
+
+.drink-name {
+	/* makes the name take the available space */
+	flex: 1;
+}
+
+.price {
+	white-space: nowrap;
+	font-weight: bold;
 }
 
 /*links styles*/
 
 .add-btn {
 	text-decoration: none;
-	color: white;
-	background-color: #7a4a00;
+	color: #8a3f0e;
+	background-color: #ffe8cc;
+	border: 2px solid #f7d9b3;
 	border-radius: 8px;
-
+	padding: 10px 20px;
 	font-weight: bold;
 	font-size: 1rem;
+	transition: 0.3s;
 }
 
 .add-btn:hover {
-	background-color: #e09c35;
+	background: #ffd9b0; /* slightly deeper pastel */
+	transform: translateY(-2px);
 }
 
 footer {

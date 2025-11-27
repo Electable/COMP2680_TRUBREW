@@ -101,6 +101,12 @@ nav img {
 	padding: 1rem;
 	color: black;
 	height: auto;
+	transition: transform 0.3s ease;
+}
+
+.product:hover {
+	transform: scale(1.05);
+	cursor: pointer;
 }
 
 /*images inside the boxes*/
