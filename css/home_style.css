@@ -1,9 +1,6 @@
-body{
-    background-color: rgba(255, 189, 89, 1);
+body {
+	background-color: rgba(255, 189, 89, 1);
     border: 1rem solid hsla(0, 0%, 0%, 1);
-    display: grid;
-    grid-template-rows: 20VH 15VH 60VH 1fr;
-    grid-template-columns: 1fr 1fr;
 }
 
 header{
@@ -16,7 +13,6 @@ header{
 
     background-color: rgba(255, 189, 89, 1);
     padding: 1.2em;
-
 }
 
 header div{
@@ -42,28 +38,28 @@ header h2{
     display: inline;
     font-style: italic;
 }
+/*Navigation bar style*/
+nav {
+	display: grid;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column: 1;
+	grid-column-end: 3;
+    height: 100px;
 
-nav{
-    display: grid;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column: 1;
-    grid-column-end: 3;
-
-    text-align: center;
-    background-color: hsla(0, 0%, 0%, 1);
+	text-align: center;
+	background-color: hsla(0, 0%, 0%, 1);
 }
 
-nav div{
-    margin: auto;
-    margin-top: 30px;
+nav div {
+	margin: auto;
+	margin-top: 30px;
 }
 
-
-nav a{
-    margin-left: 1em;
-    margin-right: 1em;
-    font-size: 30px;
+nav a {
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size: 30px;
 }
 
 nav a:link{
@@ -76,11 +72,11 @@ nav a:visited{
     font-weight: bold;
 }
 
-nav img{
-    float:right;
-    width: 2em;
-    height: 2em;
-    margin-top: -65px;
+nav img {
+	float: right;
+	width: 2em;
+	height: 2em;
+	margin-top: -65px;
 }
 
 section{
@@ -90,6 +86,7 @@ section{
     grid-column: 1;
     grid-column-end: 3;
     place-items: center;
+    height: 60VH;
     background-color: rgba(255, 215, 155, 1);
 }
 
@@ -245,6 +242,7 @@ footer a:link, a:visited{
         display: grid;
         grid-row-start: 2;
         grid-row-end: 3;
+        height: auto;
 
         text-align: center;
         background-color: hsla(0, 0%, 0%, 1);
@@ -273,6 +271,7 @@ footer a:link, a:visited{
 
     section{
         padding: 5px;
+        height: auto;
     }
 
     .infoBox{
@@ -381,6 +380,7 @@ footer a:link, a:visited{
         display: grid;
         grid-row-start: 2;
         grid-row-end: 3;
+        height: auto;
 
         text-align: center;
         background-color: hsla(0, 0%, 0%, 1);
@@ -408,6 +408,7 @@ footer a:link, a:visited{
 
     section{
         padding: 5px;
+        height: 50VH;
     }
 
     .infoBox{

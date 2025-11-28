@@ -83,7 +83,7 @@ section{
     padding: 40px;
     background-color: rgba(255, 215, 155, 1);
 	text-align: center;
-    height: auto;
+    height: 50VH;
 }
 
 .checkout {
