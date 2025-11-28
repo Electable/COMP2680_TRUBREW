@@ -1,8 +1,6 @@
 body {
 	background-color: rgba(255, 189, 89, 1);
     border: 1rem solid hsla(0, 0%, 0%, 1);
-    grid-template-rows: 20VH 15VH 60VH 1fr;
-    grid-template-columns: 1fr 1fr;
 }
 
 header{
@@ -85,6 +83,7 @@ section{
     padding: 30px;
     background-color: rgba(255, 215, 155, 1);
 	text-align: center;
+    height: 50VH;
 }
 
 .profile {
@@ -92,16 +91,17 @@ section{
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	margin-top: 10px;
     margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    margin-right: 75px;
+    font-size: 150%;
 }
 
 .info {
     border: 2px solid hsla(0, 0%, 0%, 1);
     padding: 20px;
     background-color: rgba(255, 189, 89, 1);
-    margin-left: auto;
+    margin-left: 150px;
     margin-right: auto;
+    margin-top: 75px;
     width: 60%;
     display: grid;
     align-content: end;
@@ -112,6 +112,7 @@ section{
 
 .info input{
     margin-top: 5px;
+    font-size: 100%;
 }
 
 .payment {
@@ -121,6 +122,13 @@ section{
     width: 60%;
     border: 5px solid hsla(0, 0%, 0%, 1);
     border-radius: 15px;
+    margin-top: 75px;
+    margin-left: 150px;
+    margin-right: 75px;
+}
+
+.payment input{
+    font-size: 100%;
 }
 
 input {
