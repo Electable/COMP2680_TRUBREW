@@ -1,156 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<title>Document</title>
+		<link rel="stylesheet" href="css/hot_drinks.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
 
-    <head>
-        <title>Document</title>
-        <link rel="stylesheet" href="css/hot_drinks.css"/>
+	<body>
+		<header>
+			<div>
+				<h1>TRUBREW</h1>
+				<img src="images/icons/TRUBREW_Logo.png" alt="TRUBREW Logo" width="50VW" height="50VH" />
+				<h2>Fresh Brew for the Pack</h2>
+			</div>
+		</header>
 
-    </head>
+		<!--Navigation bar-->
+		<nav>
+			<div>
+				<a href="home.html">HOME</a>
+				<a href="product_menu.html">MENU</a>
+				<a href="order.html">ORDER</a>
+				<a href="about_us.html">ABOUT US</a>
+			</div>
 
-    <body>
-        <header>
-		    	<div>
-			    	<h1>TRUBREW</h1>
-			    	<img src="images/icons/TRUBREW_Logo.png" alt="TRUBREW Logo" width="50VW" height="50VH" />
-			    	<h3>Fresh Brew for the Pack</h3>
-			    </div>
-	    </header>
+			<a href="user_profile.html">
+				<img src="images/icons/Profile_Icon.png" alt="profileIcon" width="50VW" height="50VH" />
+			</a>
+		</nav>
 
-        <nav>
-		    <div>
-			    <a href="home.html">HOME</a>
-		    	<a href="product_menu.html">MENU</a>
-    		    <a href="order.html">ORDER</a>
-			    <a href="about_us.html">ABOUT US</a>
-	    	</div>
+		<section class="wrapper">
+			<h1>Classic Coffees</h1>
+			<div class="menu-grid">
+				<div class="specials">
+					<h3>Specials Limited time only!</h3>
 
-	    	<a href="user_profile.html">
-	    		<img src="images/icons/Profile_Icon.png" alt="profileIcon" width="50VW" height="50VH" />
-	    	</a>
-	    </nav>
+					<div class="carousel">
+						<ul class="carousel-list" id="carouselList">
+							<li><img src="images/menuCafe/truBreakfast500x700.png" atl="breakfast hours" /></li>
+							<li><img src="images/menuCafe/truOffer.png" atl="special price" /></li>
+							<li>Item 3</li>
+						</ul>
+					</div>
+				</div>
 
-        <section>
-	    	<!-- Coffee -->
-	    	<div class="menu-category">
-		    	<a href="#"> <img src="images/HotDrinks/Coffee.jpg" alt="Coffee" /></a>
-		    	<div class="dropdown-menu">
-		    		<details>
-		    			<summary><h3>Coffee</h3></summary>
-		    			<ul>
-		    				<li>
-		    					<span class="drink-name">Latte</span>
-		    					<span class="price">$4.50</span>    
-		    					<button class="add-btn">Add</button>
-		    				</li>
-		    				<li>
-		    					<span class="drink-name">Mocha</span>
-		    					<span class="price">$4.25</span>
-		    					<button class="add-btn">Add</button>
-		    				</li>
-		    				<li>
-		    					<span class="drink-name">Cappuccino</span>
-		    					<span class="price">$4.75</span>
-		    					<button class="add-btn">Add</button>
-		    				</li>
-		    					<li>
-		    					<span class="drink-name">Espresso</span>
-		    					<span class="price">$4.75</span>
-		    					<button class="add-btn">Add</button>
-		    				</li>
-		    			</ul>
-		    		</details>
-		    	</div>
-		    </div>
+				<div class="product">
+					<a href="#"> <img src="images/menuCafe/mug-with-coffee-espresso.jpg" alt="mug with espresso coffee" /></a>
+					<h2>Espresso</h2>
+					<p>Strong, concentrated shot of coffee</p>
+					<p><strong>Price:</strong><span class="price"> $2.50</span></p>
+					<a href="buy-now-placeholder">Buy Now</a>
+				</div>
 
-			<!-- Tea -->
-		    <div class="menu-category">
-		    	<a href="#"> <img src="images/HotDrinks/Tea.jpg " alt="Tea" /></a>
-                
-                <div class="dropdown-menu">
-			    	<details>
-		    			<summary><h3>Tea</h3></summary>
-		    			<ul>
-		    				<li>
-		    					<span class="drink-name">Black Tea</span>
-		    					<span class="price">$4.75</span>
-		    					<button class="add-btn">Add</button>
-		    				</li>
-		    				<li>
-		    					<span class="drink-name">Green Tea</span>
-		    					<span class="price">$4.50</span>
-		    					<button class="add-btn">Add</button>
-		    				</li>
-		    				<li>
-		    					<span class="drink-name">Chai Tea</span>
-		    					<span class="price">$3.00</span>
-		    					<button class="add-btn">Add</button>
-		    				</li>   
+				<div class="product">
+					<a href="#"> <img src="images/menuCafe/cup-coffee-americano.jpg" alt="electronic charging station" /></a>
+					<h2>Americano</h2>
+					<p>Espresso with hot water</p>
+					<p><strong>Price:</strong><span class="price"> $3.00</span></p>
+					<a href="buy-now-placeholder">Buy Now</a>
+				</div>
 
-			    			<li>
-			    				<span class="drink-name">Peppermint Tea</span>
-			    				<span class="price">$3.25</span>
-			    				<button class="add-btn">Add</button>
-			    			</li>
-			    		</ul>
-		    		</details>
-		    	</div>
-		    </div>
+				<div class="product">
+					<a href="#"> <img src="images/menuCafe/cappuccino-glass-table.jpg" alt="Cappuccino coffee cup" /></a>
+					<h2>Cappuccino</h2>
+					<p>Espresso with steamed milk and foam</p>
+					<p><strong>Price:</strong><span class="price"> $4.25</span></p>
+					<a href="buy-now-placeholder">Buy Now</a>
+				</div>
 
-			<!-- Other -->
-		    <div class="menu-category">
-		    	<a href="#"> <img src="images/HotDrinks/hotchocolate.jpg" alt="Hot Chocolate" /></a>
+				<div class="product">
+					<a href="#"> <img src="images/menuCafe/latte-coffee-cup.jpg" alt="Latte coffee cup" /></a>
+					<h2>Latte</h2>
+					<p>Expresso with steamed milk</p>
+					<p><strong>Price:</strong><span class="price"> $4.50</span></p>
+					<a href="buy-now-placeholder">Buy Now</a>
+				</div>
 
-	    		<div class="dropdown-menu">
-		    		<details>
-		    			<summary><h3>Other</h3></summary>
-		    			<ul>
-		    				<li>
-		    	    			<span class="drink-name">Hot Chocolate</span>
-		    	    			<span class="price">$4.50</span>
-		    	    			<button class="add-btn">Add</button>
-		    	    		</li>
-		    	    		<li>
-		    	    			<span class="drink-name">Apple Cider</span>
-		    	    			<span class="price">$4.50</span>
-		    	    			<button class="add-btn">Add</button>
-		    	    		</li>
-		    		     	<li>
-		    		    		<span class="drink-name">Irish Coffee</span>
-		    		    		<span class="price">$5.00</span>
-		    		    		<button class="add-btn">Add</button>
-		    		    	</li>
-                            
-                            <li>
-				        		<span class="drink-name">Ginger & Lemon Water</span>
-					         	<span class="price">$5.00</span>
-					        	<button class="add-btn">Add</button>
-	    	    			</li>
-	    				</ul>
-	    			</details>
-	    		</div>
-	    	</div>
-	    </section>
+				<div class="product">
+					<a href="#"> <img src="images/menuCafe/mocha.jpg" alt="mocha coffe cup" /></a>
+					<h2>Mocha</h2>
+					<p>Espresso, chocolate and steamed milk</p>
+					<p><strong>Price:</strong><span class="price"> $4.75</span></p>
+					<a href="buy-now-placeholder">Buy Now</a>
+				</div>
+			</div>
+			<div id="cart"></div>
+			<div id="total"></div>
+		</section>
 
-        <footer>
-	    	<div>
-	    		<a href="https://www.instagram.com/">
-	    			<img src="images/icons/Instagram_Logo.png" alt="InstagramLogo" width="25VW" height="25VH" />
-	    		</a>
-	    		<a href="https://www.tiktok.com/en/">
-	    			<img src="images/icons/TikTok_Logo.png" alt="TikTokLogo" width="25VW" height="25VH" />
-	    		</a>
-	    		<a href="https://www.facebook.com/">
-	    			<img src="images/icons/Facebook_Logo.png" alt="InstagramLogo" width="25VW" height="25VH" />
-	    		</a>
-	    		<a href="https://x.com/">
-	    			<img src="images/icons/X_logo.png" alt="InstagramLogo" width="25VW" height="25VH" />
-	    		</a>
-	    	</div>
+		<footer>
+			<div>
+				<a href="https://www.instagram.com/">
+					<img src="images/icons/Instagram_Logo.png" alt="InstagramLogo" width="25VW" height="25VH" />
+				</a>
+				<a href="https://www.tiktok.com/en/">
+					<img src="images/icons/TikTok_Logo.png" alt="TikTokLogo" width="25VW" height="25VH" />
+				</a>
+				<a href="https://www.facebook.com/">
+					<img src="images/icons/Facebook_Logo.png" alt="InstagramLogo" width="25VW" height="25VH" />
+				</a>
+				<a href="https://x.com/">
+					<img src="images/icons/X_logo.png" alt="InstagramLogo" width="25VW" height="25VH" />
+				</a>
+			</div>
 
-            <p>&copy 2025 TruBrew</p>
-	    </footer>
+			<p>&copy 2025 TruBrew</p>
+		</footer>
 
-
-    <script src="script.js"></script>
-</body>
+		<script src="javascript/hot_drinks.js"></script>
+	</body>
 </html>

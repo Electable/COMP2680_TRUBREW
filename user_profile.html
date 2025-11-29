@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
-    <title>Order Page</title>
+    <title>TRUBREW - User Profile</title>
     <link rel="stylesheet" href="css/user_profile.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
@@ -34,10 +35,11 @@
             <div class="profile">
                 <div class="info">
                     <h2>Information</h2>
-                    <input type="text" id="name" placeholder="Name">
+                    <input type="text" id="input" placeholder="Name">
                     <input type="email" id="email" placeholder="Email">
                     <input type="password" id="password" placeholder="Password">
                 </div>
+				
                 <div class="payment">
                     <h2>Payment</h2>
                     <input 
@@ -45,7 +47,7 @@
                         type="tel" 
                         inputmode="numeric"  
                         pattern="[0-9\s]{13,19}"
-                        maxlength="19"
+                         maxlength="19"
                         placeholder="xxxx xxxx xxxx xxxx"
                         required
                     /><br><br>
@@ -71,9 +73,10 @@
 				</a>
 			</div>
 
-			<p>&copy 2025 TruBrew</p>
+			<p id="lastMod">&copy 2025 TruBrew</p>
 		</footer>
 
     <script src="javascript/user_profile.js"></script>
 </body>
+
 </html>
