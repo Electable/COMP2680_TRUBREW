@@ -2,7 +2,6 @@ const form = document.getElementById('form');
 const email = document.getElementById('email');
 const pass = document.getElementById('password');
 
-
 //System Clock Update
 lastMod();
 setInterval(() => sysClock(), 1000);
@@ -22,15 +21,18 @@ function lastMod(){
     modDisplay.innerText = "Last Modified: " + document.lastModified;
 }
 
+
+
+//sending email and pass to localStorage
 form.addEventListener('submit', function(transfer){
     transfer.preventDefault();
 
     const emailValue = email.value;
-    const passValue = password.value;
+    const passValue = pass.value;
 
     localStorage.setItem('user', JSON.stringify({e: emailValue, p: passValue}));
 
-    window.location.href = "user_profile.html";
+    window.location.href = "home.html";
 });
 
 

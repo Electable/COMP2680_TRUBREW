@@ -158,6 +158,21 @@ img[src="images/menuCafe/croissants-cup-black-coffee.jpg"],img[src="images/menuC
 	opacity: 50%;
 }
 
+#cart {
+    background-color: rgba(255, 215, 155, 1);
+    border: 3px solid hsla(0, 0%, 0%, 1);
+    font-weight: bold;
+	width: 30%;
+	text-align: left;
+}
+
+#total {
+	background-color: rgba(255, 215, 155, 1);
+    border: 3px solid hsla(0, 0%, 0%, 1);
+	text-align: left;
+	width: 30%;
+}
+
 /*Footer Style*/
 footer {
 	display: grid;

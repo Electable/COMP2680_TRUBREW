@@ -168,6 +168,21 @@ nav img {
 	font-weight: bold;
 }
 
+#cart {
+    background-color: rgba(255, 215, 155, 1);
+    border: 3px solid hsla(0, 0%, 0%, 1);
+    font-weight: bold;
+	width: 30%;
+	text-align: left;
+}
+
+#total {
+	background-color: rgba(255, 215, 155, 1);
+    border: 3px solid hsla(0, 0%, 0%, 1);
+	text-align: left;
+	width: 30%;
+}
+
 /* Make the specials card span 3 rows in the first column */
 .menu-grid > .specials {
 	grid-column: -2 / -1; /* last column */
@@ -197,6 +212,8 @@ a[href*="buy-now"] {
 a[href*="buy-now"]:hover {
 	background-color: #e09c35;
 }
+
+
 
 /*Footer Style*/
 footer {

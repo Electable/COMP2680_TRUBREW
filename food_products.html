@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<title>Document</title>
+		<link rel="stylesheet" href="css/food_products.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
 
-<head>
-    <title>TRUBREW - Tasty Food Items</title>
-    <link rel="stylesheet" href="css/food_products.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+	<body>
+		<header>
+			<div>
+				<h1>TRUBREW</h1>
+				<img src="images/icons/TRUBREW_Logo.png" alt="TRUBREW Logo" width="50VW" height="50VH" />
+				<h3>Fresh Brew for the Pack</h3>
+			</div>
+		</header>
 
+		<nav>
+			<div>
+				<a href="home.html">HOME</a>
+				<a href="product_menu.html">MENU</a>
+				<a href="order.html">ORDER</a>
+				<a href="about_us.html">ABOUT US</a>
+			</div>
 
-<body>
-     <header>
-        <div>
-            <h1>TRUBREW</h1>
-            <img src="images/icons/TRUBREW_Logo.png" alt="TRUBREW Logo" width="50VW" height="50VH">
-            <h2>Fresh Brew for the Pack</h2>
-        </div>
-        
-    </header>
-
-    <nav>
-        <div>
-            <a href="home.html">HOME</a>
-            <a href="product_menu.html">MENU</a>
-            <a href="order.html">ORDER</a>
-            <a href="about_us.html">ABOUT US</a>  
-        
-        </div> 
-
-         <a href="user_profile.html">
-                <img src="images/icons/Profile_Icon.png" alt="profileIcon" width="50VW" height="50VH">
-            </a> 
-
-       
-    </nav>
-  	<section class="wrapper">
+			<a href="user_profile.html">
+				<img src="images/icons/Profile_Icon.png" alt="profileIcon" width="50VW" height="50VH" />
+			</a>
+		</nav>
+		<section class="wrapper">
 			<h1>Bakery & Sweets</h1>
 			<div class="menu-grid">
 				<div class="specials">
@@ -44,8 +38,8 @@
 
 				<div class="product">
 					<a href="#"> <img src="images/menuCafe/croissants-cup-black-coffee.jpg" alt="croissants with coffe" /></a>
-					<h2>Croissants (butter, almond, chocolate)</h2>
-					<p>Strong, concentrated shot of coffee</p>
+					<h2>Croissants</h2>
+					<p>Fluffy, crunchy, with a chocolate filling.</p>
 					<p><strong>Price:</strong><span class="price"> $2.50</span></p>
 					<a href="buy-now-placeholder">Buy Now</a>
 				</div>
@@ -82,19 +76,19 @@
 					<a href="buy-now-placeholder">Buy Now</a>
 				</div>
 
-                <div class="product">
+				<div class="product">
 					<a href="#"> <img src="images/menuCafe/cheesecake.png" alt="cheesecake slice" /></a>
 					<h2>Cheesecake</h2>
 					<p>Creamy and smooth classic cheesecake slice.</p>
 					<p><strong>Price:</strong><span class="price"> $4.75</span></p>
 					<a href="buy-now-placeholder">Buy Now</a>
 				</div>
+				<div id="cart"></div>
+				<div id="total"></div>
 			</div>
 		</section>
-    
 
-
-    <footer>
+		<footer>
 			<div>
 				<a href="https://www.instagram.com/">
 					<img src="images/icons/Instagram_Logo.png" alt="InstagramLogo" width="25VW" height="25VH" />
@@ -111,8 +105,8 @@
 			</div>
 
 			<p>&copy 2025 TruBrew</p>
-	</footer>
+		</footer>
 
-    <script src="script.js"></script>
-</body>
+		<script src="javascript/food_products.js"></script>
+	</body>
 </html>

@@ -127,7 +127,11 @@ section{
     border-radius: 15px;
 }
 
-
+#cart {
+    background-color: rgba(255, 215, 155, 1);
+    border: 3px solid hsla(0, 0%, 0%, 1);
+    font-weight: bold;
+}
 
 /*Footer Style*/
 footer {
