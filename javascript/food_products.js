@@ -1,0 +1,78 @@
+//get all buttons
+const buyNowLinks = document.querySelectorAll('a[href*="buy-now"]');
+
+buyNowLinks.forEach((link) => {
+	link.addEventListener("click", (event) => {
+		event.preventDefault(); // stop the default link behavior
+
+		// get the nearest price and the name on the div with class=product
+
+		const productDiv = link.closest(".product");
+
+		if (!productDiv) {
+			alert("Product container not found!");
+			return;
+		}
+
+		// get the product name and price elements
+		const nameElem = productDiv.querySelector("h2");
+		const priceElem = productDiv.querySelector(".price");
+
+		//if the .product div doesn’t contain an <h2> or .price
+		if (!nameElem || !priceElem) {
+			alert("Product info missing!");
+			return;
+		}
+
+		const name = nameElem.textContent.trim();
+		const priceText = priceElem.textContent.trim();
+		const price = parseFloat(priceText.replace("$", ""));
+
+		if (isNaN(price)) {
+			alert("Invalid price!");
+			return;
+		}
+
+		addToCart(name, price);
+	});
+});
+
+function addToCart(name, price) {
+	//"cart" is the key (a string), when reading
+	const cartString = localStorage.getItem("cart");
+
+	let cart;
+
+	if (cartString !== null) {
+		// Convert JSON string to array
+		cart = JSON.parse(cartString);
+	} else {
+		// No saved cart, start with empty array
+		cart = [];
+	}
+
+	// Add new item to cart
+	cart.push({name, price});
+
+	// Save updated cart to localStorage,
+	// write to "cart"
+	localStorage.setItem("cart", JSON.stringify(cart));
+
+	alert(name + " added to cart! You have " + cart.length + " item(s).");
+}
+
+const cartText = document.getElementById("cart");
+const cartString = localStorage.getItem('cart');
+
+let cartItems = [];
+cartItems = JSON.parse(cartString);
+    
+var total = 0;
+
+for (let i = 0; i < cartItems.length; i++) {
+    const item = cartItems[i];
+    total += item.price;
+    cartText.innerHTML += item.name + " $" + item.price + "<br>";
+}
+
+document.getElementById("total").innerText = "Total: $" + total;
