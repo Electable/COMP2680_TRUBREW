@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Home Page</title>
+    <title>TRUBREW - Meet the Team</title>
     <link rel="stylesheet" href="css/about_us.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -40,7 +40,7 @@
             <ul>
                 <li><h2>Email: <a href="mailto:TRUBREW.com">TRUBREW.com</a></h2></li>
                 <li><h2>Phone: <a href="tel:+2501110011">+250-111-0011</a></h2></li>
-                <li><h2>Address:<address>TRU Campus, Campus Activity Center</address></h2></li>
+                <li><h2>Address:<address>TRU Campus, Old Main, 805 TRU Way</address></h2></li>
             </ul>
         </div>
 
@@ -61,6 +61,16 @@
                 <h3>Kieran Carr</h3>
                 <p><span class="first-word">Likes:</span>Earl Grey Tea</p>
             </div>
+            <div class="teamMemberBox">
+                <img src="images/extra/Woflie.jpg" alt="TeamMemberPhoto" width="75%" height="75%">
+                <h3>Wolfie</h3>
+                <p><span class="first-word">Likes:</span>Winning</p>
+            </div>
+            <div class="teamMemberBox">
+                <img src="images/extra/WillemDafoe.jpg" alt="TeamMemberPhoto" width="75%" height="75%">
+                <h3>Willem Dafoe</h3>
+                <p><span class="first-word">Likes:</span>Scheming</p>
+            </div>
         </div>
     </section>
 
@@ -70,7 +80,7 @@
             <form action="" method="post" enctype="text/plain">
             <textarea name="feedbackFormInput" id="feedbackInput" placeholder="Enter your feedback here" cols="38" rows="15"></textarea>
             </form>
-            <button type="submit">Submit Feedback</button>
+            <button type="submit" onclick="thank()">Submit Feedback</button>
         </div>
 
         <div id="truVideo" class="infoBox">
@@ -94,8 +104,8 @@
             </a>
         </div>
 
-        <p>&copy 2025 TruBrew</p>
+        <p id="lastMod">&copy 2025 TruBrew</p>
     </footer>
-    <script src="about_us.js"></script>
+    <script src="javascript/about_us.js"></script>
 </body>
 </html>

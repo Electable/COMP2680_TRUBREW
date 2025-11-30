@@ -57,12 +57,22 @@ function addToCart(name, price) {
 	// Save updated cart to localStorage,
 	// write to "cart"
 	localStorage.setItem("cart", JSON.stringify(cart));
-
-	alert(name + "  added to cart! You have" + cart.length + "  items.");
+	window.location.reload();
 }
 
-window.addEventListener("load", () => {
-	localStorage.clear();
-});
 
+const cartText = document.getElementById("cart");
+const cartString = localStorage.getItem('cart');
 
+let cartItems = [];
+cartItems = JSON.parse(cartString);
+    
+var total = 0;
+
+for (let i = 0; i < cartItems.length; i++) {
+    const item = cartItems[i];
+    total += item.price;
+    cartText.innerHTML += item.name + " $" + item.price + "<br>";
+}
+
+document.getElementById("total").innerText = "Total: $" + total;
