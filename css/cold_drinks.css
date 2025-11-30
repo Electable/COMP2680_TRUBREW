@@ -4,8 +4,13 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+<<<<<<< HEAD
+	background-color: #ffbd59;
+	border: 1rem solid black;
+=======
 	background-color: rgba(255, 189, 89, 1);
   	border: 1rem solid hsla(0, 0%, 0%, 1);
+>>>>>>> 67a07bd5ee5afab220202941febf20431ce8ec45
 }
 
 header {
@@ -93,7 +98,7 @@ section {
 }
 
 .menu-category {
-	background: #e07b39;
+	background:  #eb8f54;
 	text-align: center;
 	border-radius: 10px;
 	padding: 10px;
