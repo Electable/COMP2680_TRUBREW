@@ -144,6 +144,16 @@ nav img {
 	border-radius: 10px;
 }
 
+.specials img {
+	width: 280px;
+	height: 400px;
+}
+
+#cart {
+	width: 1px;
+}
+
+
 /*links styles*/
 
 a[href*="buy-now"] {
