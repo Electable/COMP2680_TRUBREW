@@ -319,9 +319,16 @@ a:visited {
 	}
 
 	section {
-		padding: 5px;
+		display: grid;
+		grid-row-start: 3;
+		grid-row-end: 4;
+		grid-column: 1;
+		grid-column-end: 3;
+		place-items: center;
 		height: auto;
-	}
+		background-color: rgba(255, 215, 155, 1);
+		margin-left: -55px;
+		}
 
 	.infoBox {
 		background-color: rgba(255, 189, 89, 1);
@@ -339,20 +346,28 @@ a:visited {
 		border: 5px solid hsla(0, 0%, 0%, 1);
 		padding: 5px;
 		font-weight: bold;
-		font-size: 15px;
+		font-size: 5px;
+	}
+
+	.productBox td,th{
+		font-size: 85%;
 	}
 
 	#dealSect a,
 	table {
 		display: inline;
 		border-collapse: collapse;
+		font-size: 15px;
 	}
+	
 
 	#dealsSect {
 		grid-row-start: 3;
 		grid-row-end: 4;
 		grid-column-start: 1;
 		grid-column-end: 2;
+		width: 350px;
+		height: auto;
 	}
 
 	#eventsSect {
@@ -360,6 +375,8 @@ a:visited {
 		grid-row-end: 5;
 		grid-column-start: 1;
 		grid-column-end: 2;
+		width: 350px;
+		height: auto;
 	}
 
 	.eventBox {
@@ -456,28 +473,27 @@ a:visited {
 	}
 
 	section {
-		padding: 5px;
-		height: 50vh;
-	}
+		display: grid;
+		grid-row-start: 3;
+		grid-row-end: 4;
+		place-items: center;
+		height: auto;
+		background-color: rgba(255, 215, 155, 1);
+		}
 
 	.infoBox {
 		background-color: rgba(255, 189, 89, 1);
 		border: 5px solid hsla(0, 0%, 0%, 1);
 		border-radius: 15px;
 		height: auto;
-		width: auto;
+		width: 150%;
 		padding: 5px;
 		margin-top: 10px;
 	}
 
-	caption {
-		font-size: 18.5px;
-	}
-	#dealsSect {
-		grid-row-start: 3;
-		grid-row-end: 4;
-		grid-column-start: 1;
-		grid-column-end: 2;
+	caption{
+		font-size: 125%;
+		margin-bottom: 10px;
 	}
 
 	#dealSect tr,
@@ -487,13 +503,26 @@ a:visited {
 		border: 5px solid hsla(0, 0%, 0%, 1);
 		padding: 5px;
 		font-weight: bold;
-		font-size: 25px;
+		font-size: 5px;
 	}
 
 	#dealSect a,
 	table {
 		display: inline;
 		border-collapse: collapse;
+		font-size: 15px;
+	}
+	
+
+	#dealsSect {
+		grid-row-start: 3;
+		grid-row-end: 4;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		width: 350px;
+		height: auto;
+		margin-left: 50px;
+		margin-top: -50px;
 	}
 
 	#eventsSect {
@@ -501,18 +530,13 @@ a:visited {
 		grid-row-end: 5;
 		grid-column-start: 1;
 		grid-column-end: 2;
+		width: 350px;
+		height: auto;
+		margin-left: 50px;
 	}
 
 	.eventBox {
-		background-color: rgba(255, 215, 155, 1);
-		border: 3px solid hsla(0, 0%, 0%, 1);
-		border-radius: 10px;
-		font-style: italic;
-		font-size: 20px;
-	}
-
-	.eventBox li {
-		margin: 2px;
+		margin-top: 10px;
 	}
 
 	footer {
