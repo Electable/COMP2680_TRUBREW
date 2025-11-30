@@ -57,8 +57,7 @@ function addToCart(name, price) {
 	// Save updated cart to localStorage,
 	// write to "cart"
 	localStorage.setItem("cart", JSON.stringify(cart));
-
-	alert(name + " added to cart! You have " + cart.length + " item(s).");
+	window.location.reload();
 }
 
 const cartText = document.getElementById("cart");
