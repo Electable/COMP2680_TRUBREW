@@ -133,6 +133,26 @@ section{
     font-weight: bold;
 }
 
+.header {
+    text-align: center;
+    border: 1px solid black;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+.add {
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+    text-decoration: none;
+    background-color: whitesmoke;
+}
+
+a:visited {
+    color: black;
+}
+
 /*Footer Style*/
 footer {
 	display: grid;

@@ -155,6 +155,11 @@ table {
 	animation: pulseGlow 3s ease-in-out infinite;
 }
 
+#dealsSect h1{
+	color: red;
+	font-weight: bolder;
+}
+
 .productBox table {
 	width: 100%;
 	border-collapse: collapse;

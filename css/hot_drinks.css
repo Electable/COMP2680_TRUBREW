@@ -197,6 +197,15 @@ nav img {
 	height: auto;
 }
 
+.header {
+    text-align: center;
+    border: 1px solid black;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+	width: 50%;
+}
+
 /*links styles*/
 
 a[href*="buy-now"] {
