@@ -68,11 +68,20 @@ let cartItems = [];
 cartItems = JSON.parse(cartString);
     
 var total = 0;
-
+cartText.innerHTML = "";
 for (let i = 0; i < cartItems.length; i++) {
     const item = cartItems[i];
     total += item.price;
-    cartText.innerHTML += item.name + " $" + item.price + "<br>";
+    cartText.innerHTML += `
+        ${item.name} \- \$${item.price} 
+        <button onclick="removeItem(${i})">Delete</button>
+        <br>`;
+}
+
+function removeItem(index){
+    cartItems.splice(index,1);
+    localStorage.setItem('cart', JSON.stringify(cartItems));
+    window.location.reload();
 }
 
 document.getElementById("total").innerText = "Total: $" + total;
